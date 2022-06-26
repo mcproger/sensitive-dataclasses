@@ -8,12 +8,12 @@ def sensitive_dataclass(
     class_: Optional[type] = None,
     /,
     *,
-    init=True,
-    repr=True,
-    eq=True,
-    order=False,
-    unsafe_hash=False,
-    frozen=False,
+    init: bool = True,
+    repr: bool = True,
+    eq: bool = True,
+    order: bool = False,
+    unsafe_hash: bool = False,
+    frozen: bool = False,
 ) -> Callable:
     def _process_sensitive_fields(class_: type) -> type:
         for field, annotation in class_.__annotations__.items():
