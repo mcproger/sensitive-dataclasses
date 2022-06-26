@@ -1,8 +1,7 @@
 import dataclasses
-
 import pytest
 
-from sensitive_dataclasses import sensitive_dataclass, SensitiveData
+from sensitive_dataclasses import SensitiveData, sensitive_dataclass
 
 
 @sensitive_dataclass

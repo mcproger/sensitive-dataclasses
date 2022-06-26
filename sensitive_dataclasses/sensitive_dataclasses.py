@@ -1,5 +1,6 @@
+from typing import Any, Callable, NewType, Optional
+
 import dataclasses
-from typing import Any, NewType, Callable, Optional
 
 SensitiveData = NewType('SensitiveData', Any)
 
