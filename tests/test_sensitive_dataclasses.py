@@ -21,7 +21,7 @@ class DataclassWithExplicitlyDefinedFields:
     password: SensitiveData = dataclasses.field(
         default='default-password',
     )
-    
+
 
 @sensitive_dataclass(frozen=True)
 class FrozenDataclass:
