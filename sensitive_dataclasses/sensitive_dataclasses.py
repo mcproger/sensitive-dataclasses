@@ -2,7 +2,7 @@ from typing import Any, Callable, NewType, Optional
 
 import dataclasses
 
-SensitiveData = NewType('SensitiveData', Any)
+SensitiveData = NewType('SensitiveData', Any)  # type: ignore[valid-newtype]
 
 
 def sensitive_dataclass(
@@ -31,7 +31,7 @@ def sensitive_dataclass(
         return class_
 
     def decorator(class_: type) -> Callable:
-        dataclass_ = dataclasses.dataclass(
+        dataclass_ = dataclasses.dataclass(  # type: ignore[call-overload]
             _process_sensitive_fields(class_),
             init=init,
             repr=repr,

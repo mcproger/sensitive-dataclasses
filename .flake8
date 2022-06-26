@@ -1,4 +1,0 @@
-[flake8]
-ignore = W504, D100, D101, D103, D104
-max-line-length = 120
-exclude = venv
