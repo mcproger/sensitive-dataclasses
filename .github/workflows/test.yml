@@ -31,3 +31,8 @@ jobs:
         pip install -r requirements_dev.txt
     - name: Run checks
       run: make check
+    # Upload coverage to codecov: https://codecov.io/
+    - name: Upload coverage to Codecov
+      uses: codecov/codecov-action@v3
+      with:
+        file: ./coverage.xml

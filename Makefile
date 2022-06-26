@@ -1,5 +1,5 @@
 test:
-	pytest -svv tests/
+	pytest -svv --cov . --cov-report xml tests/
 lint:
 	flake8 .
 isort:
