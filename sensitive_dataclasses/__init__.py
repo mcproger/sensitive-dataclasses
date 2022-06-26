@@ -1,5 +1,4 @@
-from .sensitive_dataclasses import sensitive_dataclass, SensitiveData
-
+from .sensitive_dataclasses import SensitiveData, sensitive_dataclass
 
 __all__ = [
     'sensitive_dataclass',
