@@ -67,7 +67,7 @@ sentry_sdk.init(
 class MyClass:
     username: str
     int_field: int
-    str_field: SensitiveData
+    str_field: SensitiveData  # mark the field as sensitive, so it won't be logged
 
 
 m = MyClass(
