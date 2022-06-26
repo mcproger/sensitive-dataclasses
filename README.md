@@ -49,7 +49,7 @@ this code snippet will produce an error to Sentry, and Sentry will log all the f
 
 ![example1](https://raw.githubusercontent.com/mcproger/sensitive-dataclasses/master/docs/example1.png)
 
-But what if one of the fields contains something, that we won't to be logged?
+But what if one of the fields contains something that we don't want to be logged?
 
 We can use the type extension and the decorator to prevent this case:
 
